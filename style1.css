@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+/*font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+}
+/* Navbar */
+#navbar{
+    background: #f9f9f9;;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+color:#ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color:black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background-color: #ffa500;
+    color: #f9f9f9;
+}
+#navbar form button{
+    background-color: #ffa500;
+    color: #f9f9f9;
+    border: none;
+}
+/* Home Section */
+.home{
+    width: 100%;
+    color: black;
+    background-image: url("https://thumbs.dreamstime.com/b/amazing-nature-landscape-famous-waterfall-skradinski-buk-sunrise-croatia-outdoor-travel-background-amazing-nature-landscape-147189513.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: black;
+    font-size: 38px;
+    font-weight: 500px;
+    text-shadow: 0px 1px 1px white;
+}
+.home .content h1{
+    color:black;
+    font-size: 70px;
+    font-weight: 550px;
+    text-shadow: 0px 1px 1px white;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: "";
+    color: #ffa500;
+    text-shadow: 0px 1px 1px white;
+    animation: changetxt 10s infinite linear;
+}
+@keyframes changetxt{
+    0%{
+        content:"France";
+    }
+    10%{
+        content:"Spain";
+    }
+    20%{
+        content:"United State";
+    }
+    30%{
+        content:"China";
+    }
+    40%{
+        content:"India";
+    }
+    50%{
+        content:"Germany";
+    }
+    60%{
+        content:"Italy";
+    }
+    70%{
+        content:"Paris";
+    }
+    80%{
+        content:"Turkey";
+    }
+    90%{
+        content:"London";
+    }
+    100%{
+        content:"Mexico";
+    }
+}
+.home .content p{
+    color:black;
+    font-size: 15px;
+    font-weight: 600px;
+    text-shadow: 0px 1px 1px white;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.home .content a{
+    padding: 3px;
+    background: white;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    font-family: 'Roboto', sans-serif;
+}
+.home .content a:hover{
+    background-color: #ffa500;
+    color: #f9f9f9;
+}
+@media(max-width:850px)
+{
+    .home{
+        background-position: 50%;
+    }
+}
+@media(max-width:450){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* section book*/
+.book{
+    background:#f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 0px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none; 
+    box-shadow:0px 5px 5px -6px black ;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background-color: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: .5s;
+}
+.book.submit:hover{
+    width: 170px;
+}
+@media(max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+/* Section Package */
+.main-text h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: #ffa500;
+    color: #f9f9f9;
+    border-radius: 5px;
+}
+/* Section Service */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* Section Gallary */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* about */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about.card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media(max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+/* footer */
+#footer{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transform: scale(1);
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}

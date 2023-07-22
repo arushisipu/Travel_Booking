@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Noto+Sans:wght@500&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!--Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Travel Ticket</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" id="logo"><span>T</span>ravel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallary">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="home">
+        <div class="content">
+            <h5>Welcome To World</h5>
+            <h1>Visit <span class="changecontent"></span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, praesentium!</p>
+            <a href="#book">Book Place</a>
+        </div>
+    </div>
+    <!-- section book -->
+    <section class="book" id="book">
+        <div class="container">
+            <div class="main-text">
+                <h1><span>B</span>ook</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                    <form action="# connect.php" method="post">
+                        <input name="Where_To" type="text" class="form-control" placeholder="Where To" required><br>
+                        <input name="How_many" type="text" class="form-control" placeholder="How Many" required><br>
+                        <input name="Arrivals" class="form-control" placeholder="Arrivals"  type="date" required><br>
+                        <input name="Leaving"  class="form-control" placeholder="Leaving" type="date" required><br>
+                        <textarea class="form-control" rows="5" name="text" type="text"
+                            placeholder="Enter your Name and Details"></textarea><br>
+                        <input type="submit" name="submit" value="Book Now" class="submit" required><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Package -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <div class="main-text">
+                <h1><span>P</span>ackages</h1>
+            </div>
+            <div class="row" style="margin-top:30px;">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>United Kingdom</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, atque.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$500</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel3.jpg" alt="">
+                        <div class="card-body">
+                            <h3>France</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, atque.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$600</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel4.jpg" alt="">
+                        <div class="card-body">
+                            <h3>India</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, atque.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <h6>Price:<strong>$500</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel5.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Spain</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, atque.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$560</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel6.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Paris</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, atque.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$600</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel7.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Maxico</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, atque.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$400</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel9.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Germany</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, atque.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$500</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel10.jpg" alt="">
+                        <div class="card-body">
+                            <h3>United State</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, atque.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <h6>Price:<strong>$700</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel8.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Turkey</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, atque.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$580</strong></h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Service -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="main-text">
+                <h1><span>S</span>ervices</h1>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-hotel"></i>
+                        <div class="card-body">
+                            <h3>Affordable Hotel</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid voluptas
+                                voluptate excepturi atque. Optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-utensils"></i>
+                        <div class="card-body">
+                            <h3>Food & Drinks</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid voluptas
+                                voluptate excepturi atque. Optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-restroom"></i>
+                        <div class="card-body">
+                            <h3>Restroom</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid voluptas
+                                voluptate excepturi atque. Optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <i class="fas fa-globe-asia"></i>
+                            <div class="card-body">
+                                <h3>Around The World</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid voluptas
+                                    voluptate excepturi atque. Optio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <i class="fas fa-plane"></i>
+                            <div class="card-body">
+                                <h3>Fastest Travel</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid voluptas
+                                    voluptate excepturi atque. Optio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <i class="fas fa-hiking"></i>
+                            <div class="card-body">
+                                <h3>Adventures</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid voluptas
+                                    voluptate excepturi atque. Optio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- cSection Gallary -->
+    <section class="gallary" id="gallary">
+        <div class="container">
+            <div class="main-text">
+                <h1><span>G</span>allary</h1>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel11.jpg" alt="" height="230px">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel12.jpeg" alt="" height="230px">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel13.jpg" alt="" height="230px">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel14.jpg" alt="" height="230px">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel15.jpg" alt="" height="230px">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel16.jpg" alt="" height="230px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="main-text">
+                <h1><span>About</span>Us</h1>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="travel17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                    <h2>How Travel Agency Work</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam id incidunt similique temporibus,
+                        sit consectetur doloribus neque accusamus a, voluptatum, recusandae quam? Esse tempora
+                        cupiditate, animi minima temporibus eligendi est ratione consectetur, rem nobis voluptas quam
+                        hic porro optio unde obcaecati mollitia doloremque laudantium enim velit perferendis corrupti
+                        totam non. Debitis cumque nisi consequatur recusandae quae at. Numquam, harum quis!</p>
+                     <button id="about-btn">Read More...</button>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer">
+        <h1><span>T</span>ravel</h1>
+        <p>Lorem ipsum dolor, sit amet nihil mollitia tempora modi recusandae temporibus voluptas!</p>
+        <div class="social-links">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="credit">
+            <p>Designed By: <a href="#">Arushi</a></p>
+        </div>
+        <div class="copyright">
+            <p>&copy; Copyright Arushi</p>
+        </div>
+    </section>
+</body>
+
+</html>
